@@ -9,13 +9,11 @@ This is a package to aid in genotyping data from the TopMed data repository
 ## Steps to Obtain Genotype Information
 1. Use get_variants to obtain a dataframe containing the chromosome, variant_id, and index for all of the variants of interest. A finished version of variants_df can be found at "topmed_variants_4_25.rda".
 ````
-````
     directory <- "/path/to/pgen/psam/pvar/data"
     rsids <- listOfRsids
     sequnce <- seq(1:22) %>% append(c("X"))
     chr_list <- sprintf("chr%s", sequnce)
     variants_df <- get_varaints(chr_list, rsids, directory) %>% filter(!is.na(index))
-````
 ````
 
 3. Create a pgen list
