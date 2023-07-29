@@ -12,7 +12,6 @@ get_genotypes <- function(variants_df, directory, psam) {
   genotypes <- group_by(variants_df, chromosome) %>% 
     group_map(get_genotypes_from_pgen, pgen_list) %>% 
     bind_cols
-  psam <- make_psam("chr1", directory)
   rownames(genotypes) <- psam$IID
   genotypes_df <- as_tibble(genotypes, rownames = "eid")
 }
