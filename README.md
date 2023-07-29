@@ -29,3 +29,5 @@ This is a package to aid in genotyping data from the TopMed data repository
 ````
      genotypes <- get_all_genotypes(variants_df, pgen_list)
 ````
+
+**__Please see example_run_through.R for more details.__**
