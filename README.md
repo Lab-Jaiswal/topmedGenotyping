@@ -1,4 +1,4 @@
-# topmed_genotyping
+# topmedGenotyping
 This is a package to aid in genotyping data from the TopMed data repository 
 
 ## Required Information
