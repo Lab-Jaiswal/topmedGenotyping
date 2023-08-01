@@ -5,7 +5,7 @@ library(pgenlibr)
 #devtools::install_github("Lab-Jaiswal/topmed_genotyping")
 library(topmedGenotyping)
 
-directory <- "/o/s/p/topmed/topmed_f9/genotypes/pgen_files/"
+directory <- "/o/s/p/topmed/topmed_f9/genotypes/pgen_files/" #for details on the filepath, contact Maggie Maurer
 rsid_fp <- read_tsv("/o/s/p/topmed/topmed_f9/genotypes/pgen_files/chip_snps_vep_annotated_rsid.tsv", col_names = FALSE)
 rsids <- rsid_fp %>% pull(X5)
 
