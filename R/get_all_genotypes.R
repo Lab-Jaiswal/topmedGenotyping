@@ -2,6 +2,7 @@
 #' 
 #' @param variants_df dataframe containing all of the variants in the directory, created with get_directory_variants 
 #' @param pgen_list
+#' @param directory
 #' @keywords get all genotypes
 #' @export
 #' @examples
