@@ -21,11 +21,7 @@ This is a package to aid in genotyping data from the TopMed data repository
     variants_df <- get_varaints(chr_list, rsids, directory) %>% filter(!is.na(index))
 ````
 
-3. Create a pgen list
-````
-     pgen_list <- get_pgen_list(chr_list, directory)
-````
-4. Use get_all_genotypes to get a dataframe containing the individuals and their genotypes.
+3. Use get_all_genotypes to get a dataframe containing the individuals and their genotypes.
 ````
      genotypes <- get_all_genotypes(variants_df, pgen_list)
 ````
