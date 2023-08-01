@@ -27,7 +27,6 @@ This is a package to aid in genotyping data from the TopMed data repository
 ````
 4. Use get_all_genotypes to get a dataframe containing the individuals and their genotypes.
 ````
-     psam <- make_psam("chr1", directory)
      genotypes <- get_all_genotypes(variants_df, pgen_list)
 ````
 
