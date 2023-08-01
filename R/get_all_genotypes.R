@@ -10,8 +10,8 @@
 #' get_genotypes_from_pgen()
 
 get_all_genotypes <- function(variants_df, pgen_list, directory){
-  variants_df_auto <- filter(variants_df, chromosome != "cX")
-  variants_df_x <- filter(variants_df, chromosome == "cX")
+  variants_df_auto <- filter(variants_df, chromosome != "chrX")
+  variants_df_x <- filter(variants_df, chromosome == "chrX")
   
   chromosome <- pgen_list[1] %>% names
   psam <- make_psam(chromosome, directory)
