@@ -14,7 +14,5 @@ chr_list<- sprintf("chr%s", sequnce)
 
 variants_df <- get_variants(chr_list[22:23], rsids, directory) %>% filter(!is.na(index)) 
 
-pgen_list <- get_pgen_list(chr_list[22:23], directory)
-
 genotypes <- get_all_genotypes(variants_df, pgen_list, directory)
 #write_rds(geno_full, "ukbiobank_genotypes.rda")
