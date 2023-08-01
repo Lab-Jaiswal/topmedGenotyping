@@ -1,7 +1,6 @@
 #' Make a geno_full
 #' 
 #' @param variants_df dataframe containing all of the variants in the directory, created with get_directory_variants 
-#' @param pgen_list
 #' @param directory
 #' @keywords get all genotypes
 #' @export
@@ -9,11 +8,11 @@
 #' @export
 #' get_genotypes_from_pgen()
 
-get_all_genotypes <- function(variants_df, pgen_list, directory){
+get_all_genotypes <- function(variants_df, directory){
   variants_df_auto <- filter(variants_df, chromosome != "chrX")
   variants_df_x <- filter(variants_df, chromosome == "chrX")
   
-  chromosome <- pgen_list[1] %>% names
+  chromosome <- variants_df$chromosome[1]
   psam <- make_psam(chromosome, directory)
   
   if (nrow(variants_df_auto) > 0){
