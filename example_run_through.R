@@ -5,8 +5,8 @@ library(pgenlibr)
 #devtools::install_github("Lab-Jaiswal/topmed_genotyping")
 library(topmedGenotyping)
 
-directory <- "/oak/stanford/projects/topmed/topmed_f9/genotypes/pgen_files/"
-rsid_fp <- read_tsv("/oak/stanford/projects/topmed/topmed_f9/genotypes/pgen_files/chip_snps_vep_annotated_rsid.tsv", col_names = FALSE)
+directory <- "/o/s/p/topmed/topmed_f9/genotypes/pgen_files/"
+rsid_fp <- read_tsv("/o/s/p/topmed/topmed_f9/genotypes/pgen_files/chip_snps_vep_annotated_rsid.tsv", col_names = FALSE)
 rsids <- rsid_fp %>% pull(X5)
 
 sequnce <- seq(1:22) %>% append(c("X"))
