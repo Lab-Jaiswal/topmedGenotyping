@@ -2,7 +2,7 @@ library(devtools)
 library(magrittr)
 library(tidyverse)
 library(pgenlibr)
-#devtools::install_github("Lab-Jaiswal/topmed_genotyping")
+#devtools::install_github("Lab-Jaiswal/topmedGenotyping")
 library(topmedGenotyping)
 
 directory <- "/o/s/p/topmed/topmed_f9/genotypes/pgen_files/" #for details on the filepath, contact Maggie Maurer
