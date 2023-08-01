@@ -22,6 +22,7 @@ get_all_genotypes <- function(variants_df, pgen_list, directory){
     geno_auto <- as.data.frame(matrix(ncol = 0, nrow = 0))
   }
   if (nrow(variants_df_x) > 0) {
+    psam_x <- make_psam("chrX", directory)
     geno_x <- get_genotypes(variants_df_x, directory, psam = psam_x)
   } else {
     geno_x <- as.data.frame(matrix(ncol = 0, nrow = 0))
